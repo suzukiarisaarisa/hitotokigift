@@ -1,239 +1,93 @@
-@charset "UTF-8";
-/* CSS Document */
-.animation{
-    opacity : 0;
-    visibility: hidden;
-    transition: 1s;
-    transform: translateY(7.81vw);
-    background-color: #E2B3B4;
-}
-.active{
-	opacity: 1;
-	visibility: visible;
-	transform: translateY(0);}
-*{
-	margin: 0px;
-	padding: 0px;
-}
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>茶×灯</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'pbp5lir',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="java.js"></script>
+<link href="tomori.css" rel="stylesheet" type="text/css">
+</head>
 
-a{
-	text-decoration: none;
-	color: inherit;
-}
-body{
+<body>
+	<header>
+	  <nav class="mainnav">
+		  <div class="logo"><a href="index.html#top"><img src="image/logo.png"  alt=""/></a></div>
+			<ul>
+				<li><a href="index.html#about">about</a></li>
+				<li><a href="index.html#purduct">product</a></li>
+				<li><a href="index.html#news">news</a></li>
+				<li><a href="index.html#contact">contact</a></li>
+			</ul>
+		</nav>
+		<nav class="sabnav">
+			<ul class="cart">
+				<img src="image/cart.png" width="32" height="34" alt=""/>
+			</ul>
+			<ul class="menu">
+			  <img src="image/menu.png" width="50" height="49" alt=""/>
+			</ul>
+		</nav>
+	</header>
+	<section id="top">
+		<div class="topimg"><img src="image2/tomoritop.jpg" alt=""/></div>
+		<div class="topkake"><img src="image2/tomorikake.png" alt=""/></div>
+		<p class="with">with candle</p>
+		<p class="h1">日本茶と和ろうそくのギフト</p>
+	</section>
+	<section id="gift">
+		<div class="gift1"><img src="image2/tomori1.jpg" alt=""/></div>
+		<div class="giftp">
+			<p class="p1">自分自身と向き合い、<br>
+			心を整える安らぎのひとときを</p>
+			<p class="p2">日本茶と和ろうそくのギフト  ¥4,980税込</p>
+			<p class="p3">興奮状態を落ち着かせる鎮静効果のある日本茶と、瞑想にも使用される癒し効果の高い和ろうそくで、kスイッチをonからoffに。１日の終わりにざわついた心を落ち着かせ、心にゆとりつくるひとときをお過ごしください。</p>
+			<img class="addcart" src="image2/add.png" alt=""/>
+		</div>
+	</section>
+	<section id="grally">
+		<div class="grally">
+	    <img src="image2/tomori2.jpg" alt=""/>
+	    <img src="image2/tomori3.jpg" alt=""/>
+	    <img src="image2/tomori4.jpg" alt=""/>
+		</div>
+	</section>
+	<section id="naiyo">
+		<h1>ギフト内容</h1>
+		<p>急須1口<br>
+		湯飲み1口<br>
+		湯冷まし１口<br>
+		茶葉2種（ゆたかみどり・あさつゆ）20g<br>
+		和ろうそく10本<br>
+		冊子<br>
+		</p>
+	</section>
+	<footer id="contact">
+		<div class="flogo"><a href="index.html#top"><img src="image/logo.png"  alt=""/></a></div>
+			<ul class="fnav">
+				<li><a href="index.html#about">about</a></li>
+				<li><a href="index.html#purduct">product</a></li>
+				<li><a href="index.html#news">news</a></li>
+				<li><a href="index.html#contact">contact</a></li>
+			</ul>
+	  <div class="scroll"><a href="#top"><img src="image/scroll.png" alt=""/></a></div>
+	  <div class="sns">
+	    <img src="image/twitter.png" alt=""/>
+		<img src="image/face.png" alt=""/>
+	    <img src="image/insta.png" alt=""/> </div>
+</footer>
 
-}
-header{
-	position: fixed;
-	z-index: 100;
-}
-.logo img,.flogo img{
-	width: 5.56vw;
-}
-.mainnav{
-    width: 13.47vw;
-	height: 55.56vw;
-	text-align: center;
-}
-.mainnav img{
-	padding-top: 2.78vw;
-}
-.mainnav ul{
-	margin-left: 4vw;
-	margin-top: 26.39vw;
-}
-.mainnav li{
-    text-align: left;
-    list-style-type: none;
-    font-family: eb-garamond;
-    font-size: 1.25vw;
-    letter-spacing: 0.2em;
-	color: #333;
-	transition: all 0.5s;
-}
-.mainnav li:hover{
-    color: #9C9C9C;
-}
-.sabnav{
-	width: 100vw;
-	height: 10.417vw;
-	text-align: right;
-	margin-top: -55.556vw;
-}
-.cart{
-	padding-right: 3.472vw;
-	padding-top: 1.389vw;
-}
-.menu{
-	padding-right: 2.431vw;
-	padding-top: 1.042vw;
-}
-#top{
-	width: 100vw;
-	height: 788px;
-	position: relative;
-}
-.topimg{
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-.topimg img{
-	width: 1238px;
-}
-.topkake{
-	position: absolute;
-	z-index: 100;
-	top: 195px;
-	left: 341px;
-}
-.topkake img{
-	width: 281.4146px;
-}
-.with{
-	position: absolute;
-	z-index: 100;
-	top: 360px;
-	left: 365px;
-	font-family: eb-garamond;
-    font-size: 13px;
-    letter-spacing: 0.7em;
-	color: #fff;
-	
-}
-.h1{
-	font-family: ten-mincho;
-	font-size: 20.58px;
-	letter-spacing: 0.3em;
-	line-height: 51.51px;
-	color: #fff;
-	z-index: 100;
-	top: 380px;
-	left: 362px;
-	position: absolute;
-}
-#gift{
-	margin-top: 116px;
-	display: flex;
-}
-.gift1{
-	margin-left: 202px;
-}
-.gift1 img{
-	width: 664px;
-}
-.giftp{
-	margin-left: 80px;
-}
-.p1{
-font-family: ten-mincho;
-font-size: 22px;
-letter-spacing: 0.3em;
-line-height: 37.63px;
-color: #333;
-margin-top: 53px;
-}
-.p2{
-	font-family: ten-mincho;
-	font-size: 14.3px;
-	letter-spacing: 0.3em;
-	text-align: left;
-	color: #333;
-	margin-top: 25px;
-}
-.p3{
-	width: 390px;
-	height: 180px;
-	font-family: ten-mincho;
-	font-weight: normal;
-	font-size: 14px;
-	letter-spacing: 0.3em;
-	line-height: 29.76px;
-	text-align: left;
-	color: #333;
-	margin-top: 25px;
-}
-.addcart{
-	width:202px;
-	transition: 0.5s;
-}
-.addcart:hover{
-	margin-left: 10px;
-}
-#grally{
-	margin-top: 100px;
-}
-.grally{
-	display: flex;
-	justify-content: space-between;
-}
-.grally img{
-	width: 467.3315px;
-}
-#naiyo{
-	margin-top: 78px;
-	margin-left: 200px;
-}
-h1{
-	font-family: ten-mincho;
-	font-size: 16px;
-	letter-spacing: 0.3em;
-	line-height: 56.38px;
-	text-align: left;
-	color: #000;
+		
+</body>
+</html>
 
-}
-#naiyo p{
-	width: 566.35px;
-	height: 153.22px;
-	font-family: ten-mincho;
-	font-size: 14px;
-	letter-spacing: 0.3em;
-	line-height: 22.68px;
-	color: #666;
-
-}
-footer{
-    height: 300px;
-    margin-top: 80px;
-    position: relative;
-    background-color: #F3F3F3;	
-}
-.fnav{
-	position: absolute;
-	text-align: left;
-    list-style-type: none;
-    font-family: eb-garamond;
-    font-size: 1.2vw;
-    letter-spacing: 0.2em;
-	color: #333;
-	transition: all 0.5s;
-	top: 64px;
-	right: 250px;
-	line-height: 30px;
-}
-.flogo{
-	position: absolute;
-	left: 140px;
-	top: 64px;
-	}
-.flogo img{
-	width: 6vw;
-}
-.scroll{
-	position: absolute;
-	right: 8.819vw;
-	top:-80px;
-}
-.scroll img{
-	width: 16px;
-}
-.sns{
-	position: absolute;
-	top: 66px;
-	left: 926px;
-}
-.sns img{
-	height: 25px;
-	padding: 7px;
-}
