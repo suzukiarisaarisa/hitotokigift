@@ -117,7 +117,7 @@ $(window).on("scroll", function() {
     var elem_pos = $(this).offset().top;
     $(this).find(".box_pos span").text(Math.floor(elem_pos));
     //どのタイミングでフェードインさせるか
-    if (scroll_top >= elem_pos - window_h+200) {
+    if (scroll_top >= elem_pos - window_h+100) {
       $(this).addClass("fadein4");
     } else {
       $(this).removeClass("fadein4");
@@ -159,6 +159,37 @@ $(window).on("scroll", function() {
       $(this).addClass("fadein6");
     } else {
       $(this).removeClass("fadein6");
+    }
+  });
+});
+
+$(function(){
+	const hum = $('.spmenu,.sp-nav ul li a,.close,.splogo')
+	const nav = $('.sp-nav')
+	hum.on('click', function(){
+	nav.toggleClass('toggle');
+});
+});
+
+
+
+ $(function(){
+  $('.js-demo01-btn').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+  var scrollend = $('#about').offset().top - 620 ; //ページ上部からの距離を取得
+  var distance = 0;
+  $(document).scroll(function(){
+    distance = $(this).scrollTop(); //スクロールした距離を取得
+    if (scrollend <= distance) {
+      $('.copy').fadeOut();
+    } else{
+      $('.copy').fadeIn();
     }
   });
 });
