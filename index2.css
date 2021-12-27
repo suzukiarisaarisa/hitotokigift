@@ -1,0 +1,417 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@media screen and (max-width:500px) {
+	himl{
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	body{
+		width: 100vw;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	.mainnav,.topimg,.copy,.abouttx p br,.spsns,.h1,.newsh1,.newsgura,.scroll,.fnav,.flogo{
+		display: none;
+	}
+	#top{
+		height: 338.164vw;
+		    text-align: right;
+
+	}
+	.sptop{
+		
+		position: sticky;
+		top: 0;
+	}
+	.sptop video{
+		width: 100vw;
+	}
+	.spcopy{
+		position: absolute;
+		z-index: 100;
+		top:60.386vw;
+	}
+	.spcopy img{
+		width: 100vw;
+	}
+	
+	#about{
+		position: absolute;
+		z-index: 100;
+	}
+	.abouttx{
+	 	top:-9.662vw;
+		left: 7.246vw;
+		width:86.957vw;
+		 position: absolute;
+		z-index: 100;
+		transform:translateY(0px);
+	opacity:0; 
+	transition:opacity 1.5s,transform 2s;
+	}
+.abouttx p{
+    font-family: ten-mincho;
+    font-size: 3.744vw;
+    letter-spacing: 0.2em;
+    line-height: 2.5em;
+    text-align: left;
+    color: #FFFFFF;
+	writing-mode:lr-tb;
+}
+.fadein5{
+	opacity:1;
+	transform:translateY(0);
+}
+
+.sabnav{
+	width: 10vw;
+	margin-top: 3.382vw;
+	margin-left: 86.957vw;
+	height: 31.401vw;
+	text-align: center;
+
+	}
+.cart{
+padding-right: 1.208vw;
+}
+.cart img{
+	width: 7.729vw;
+}
+
+.spmenu{
+	margin-top: 1.691vw;
+	padding-right: 2.431vw;
+	z-index: 1001;
+	position: relative;
+	padding-top: 1.042vw;
+}
+
+.spmenu img{
+	width: 10.87vw;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+header{
+	position: fixed;
+	z-index: 101;
+}
+
+.sp-nav{
+	transition: opacity 0.8s,transform 0.1s ease-in-out;
+    width:70vw;
+    height: 100vh;
+    opacity: 0;
+    background-color:#FFFFFF;
+	position:fixed;
+	top:0;
+	right: 0;
+	transform: translateX(200%);
+	
+}
+.close{
+	width: 10.87vw;
+	position: absolute;
+	top: 147.343vw;
+	left:14.01vw;
+}
+.spcart{
+	position: absolute;
+	top:4.831vw;
+	right: 4.831vw;
+}
+.splogo{
+	position: absolute;
+	top:16.908vw;
+	left: 14.01vw;
+	
+}
+.splogo img{
+	width: 14.493vw;
+}
+.sp-nav ul{
+	margin-top: 49.517vw;
+	margin-left: 14.01vw;
+}
+.sp-nav ul li{
+	text-align: left;
+	list-style: none;
+	margin-top: 7.246vw;
+}
+.sp-nav ul li a{
+	display: block;
+
+}
+.nave{
+	font-family: eb-garamond;
+	font-size: 	4.589vw;
+	letter-spacing: 0.2em;
+	line-height: 7.246vw;
+	color: #333;
+
+
+}
+.navja{
+	font-family: ten-mincho;
+	font-size: 2.657vw;
+	letter-spacing: 0.3em;
+	color: #686868;
+	position: relative;
+}
+
+.spsns{
+		margin-left: 165.7vw;
+	margin-top: 14.493vw;
+}
+.toggle {
+	opacity: 1;
+	transform: translateX(0%);
+	}
+	
+	#purduct{
+		height: 797.101vw;
+	}
+.sph1{
+    margin-top:5vw;
+    margin-bottom: 5.556vw;
+}
+.sph1 img{
+	width: 100vw;
+}
+.fadein6{
+	opacity:1;
+	transform:translateY(0);
+}
+	.sizenimg, .sizenkake,.sizengura,.sizentate,
+.asobiimg,.asobikake,.asobigura,.asobitate,
+.sakeimg,.sakekake,.sakegura,.saketate,
+.tomoriimg,.tomorikake,.tomorigura,.tomoritate,
+.otoimg,.otokake,.otogura,.ototate,
+.hitotokiwo1,.hitotokiwo2,.hitotokiwo3,.hitotokiwo4,.hitotokiwo5,
+.gift1,.gift2,.gift3,.gift4,.gift5,
+.view1,.view2,.view3,.view4,.view5{
+	position: absolute;
+}
+	.sizen{
+		margin-top:-2.415vw;
+	}
+	.asobi,.sake,.tomori,.oto{
+		margin-top: 96.618vw;
+	}
+.sizenimg,.sakeimg,.otoimg{
+	width: 100vw;
+	transform:translateX(-100vw);
+	opacity:0; 
+	transition:opacity 2s,transform 2.5s;
+}
+.asobiimg,.tomoriimg{
+	width: 100vw;
+	transform:translateX(100vw);
+	opacity:0; 
+	transition:opacity 2s,transform 2.5s;
+}
+.fadein{
+	opacity:1;
+	transform:translateX(0);
+}
+.sizenkake,.asobikake,.sakekake,.tomorikake,.otokake {
+	height:15.217vw;
+	z-index: 100;
+	top:79.71vw;
+	left: 21.739vw;
+}
+.sizengura,.asobigura,.sakegura,.tomorigura,.otogura{
+	width: 32.85vw;
+	z-index: 90;
+	opacity:0;
+	transition:opacity 5s,transform 2s;
+	left: 41.063vw;
+		top:71.256vw;
+
+}
+.sizentate,.asobitate,.saketate,.tomoritate,.ototate{
+	width: 2.585vw;
+	z-index: 100;
+	top:79.71vw;
+	left: 12.077vw;
+}
+.fadein2{
+	opacity:1;
+	transform:translateX(0);
+}
+.hitotokiwo2,.hitotokiwo3,.hitotokiwo4,.hitotokiwo5{
+font-family: ten-mincho;
+font-size: 3.986vw;
+letter-spacing: 0.3em;
+line-height: 7vw;
+text-align: left;
+color: #333;
+z-index: 100;
+left: 24.155vw;
+
+	top:96.135vw;
+}
+.hitotokiwo1{
+	ont-family: ten-mincho;
+	font-size: 3.623vw;
+	letter-spacing: 0.3em;
+	line-height: 7vw;
+	text-align: left;
+	color: #333;
+	z-index: 100;
+	left: 24.155vw;
+	top:96.135vw;
+		
+	}
+.gift1,.gift2,.gift3,.gift4,.gift5{
+	font-family: ten-mincho;
+	font-size: 2.657vw;
+	letter-spacing: 0.2em;
+	color: #444444;
+	z-index: 100;
+	left: 24.155vw;
+	top:114.01vw;
+}
+.sizen,.asobi,.sake,.tomori,.oto{
+	position: relative;
+	width: 100vw;
+	height: 55.556vw;
+}
+.view1,.view2,.view3,.view4,.view5{
+	width: 31.401vw;
+	height: 7.246vw;
+	border: 0.25mm solid #666666;
+	font-family: Georgia;
+	font-size: 2.415vw;
+	letter-spacing: 0.5em;
+	line-height: 7.246vw;
+	text-align: center;
+	color: #666;
+	position: relative;
+	transition: 0.5s;
+	z-index: 100;
+	left: 24.155vw;
+	top:123.188vw;
+	
+}
+.view1 img,.view2 img,.view3 img,.view4 img,.view5 img{
+	width: 5.314vw;;
+	position: absolute;
+	right: -2.415vw;;
+	top: 2.415vw;
+}
+.view1:hover,.view2:hover,.view3:hover,.view4:hover,.view5:hover{
+	left:25.362vw;
+}
+
+
+
+#news{
+	position: relative;
+	height: 62.802vw;
+	margin-top: 7.246vw;
+	background: #F3F3F3;	
+}
+	h2{
+	font-family: Georgia;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 7.246vw;
+	letter-spacing: 0.1em;
+	line-height: 3.472vw;
+	color:#4d4d4d;
+	left: 7.246vw;
+	top: -1.932vw;
+	position: absolute;
+	z-index: 100;
+	}
+
+table{
+	position: absolute;
+	left: 7.246vw;
+	z-index: 100;
+	top:7.246vw;
+	display: block;
+}
+	th,td,tr{
+		display: block;
+		text-align: left;
+	}	
+th{
+	font-family: Georgia;
+	font-weight: 100;
+	font-size: 2.899vw;
+	letter-spacing: 0.1em;
+	line-height: 3.472vw;
+	color:#4d4d4d;
+}
+td{
+	font-family: ten-mincho;
+	font-weight: normal;
+	font-size: 3.14vw;
+	letter-spacing: 0.2em;
+	line-height: 7vw;
+	text-align: left;
+	color:#4d4d4d;
+
+}
+tr{
+	margin-top: 2.415vw;
+	transform:translateY(20px);
+	opacity:0; 
+	transition:opacity 1s,transform 2s;
+}
+.fadein4{
+	opacity:1;
+	transform:translateX(0);
+}
+.newsall{
+	position: absolute;
+	right: 7.246vw;
+	top: 50vw;
+	transition: 0.5s;
+}
+.newsall:hover{
+	right: 6.039vw;
+}
+.newsall img{
+	width: 33.816vw;
+}
+footer{
+    height: 15vw;
+    margin-top: 6.944vw;
+    position: relative;
+}
+
+.spflogo{
+	position: absolute;
+	left: 9.722vw;
+	top:1vw;
+	}
+.spflogo img{
+	width: 17vw;
+}
+.scroll{
+	position: absolute;
+	right: 8.819vw;
+	top:-5.556vw;
+}
+.scroll img{
+	width: 1.111vw;
+}
+.sns{
+	position: absolute;
+	top: 1vw;
+	right: 7.246vw;
+}
+.sns img{
+	height: 4vw;
+	padding: 1vw;
+}
+
+}
+
+
